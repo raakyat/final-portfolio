@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  background-color: black;
+  text-align: center;
+  color: rgb(56, 154, 247);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px #FF0000;
+  opacity: 0.9;
+  cursor: default;
+}
+
+h3 {
+  color: white;
+  opacity: 0.2;
+}
+
+.project-card {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px red, 0px 0px 15px rgb(56, 154, 247);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0px 0px 30px red, 0px 0px 40px rgb(56, 154, 247);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  display: block;
+  transition: transform .8s;
+}
+
+.project-card img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+
+button {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  box-shadow: 0px 1px 5px red, 0px 1px 5px rgb(56, 154, 247);
+  text-shadow: 2px 2px #FF0000;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+.center {
+  background: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  color: white;
+  cursor: grab;
+  box-shadow: 0px 3px 15px red, 0px 4px 20px rgb(56, 154, 247);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttons {
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#projects,
+#audio,
+#beats,
+#resume {
+  margin: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 10%;
+  padding-top: 20px;
+}
+
+.socials {
+  padding-top: 40px;
+  color: rgb(56, 154, 247);
+  text-shadow: 2px 2px #FF0000;
+  opacity: 0.9;
+}
+
+.socials:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+nav img {
+  height: 100px;
+  width: 100px;
+}
+
+nav img:hover {
+  opacity: 0.75;
+  transform: scale(1.05);
+}
+
+.home-logo {
+  padding-top: 100px;
+  width: 50%;
+  opacity: 0.9;  
+}
+
+.github {
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+}
+
+.linkedin {
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+}
+
+.github:hover,
+.linkedin:hover {
+  opacity: 0.75;
+  transform: scale(1.05);
+}
+
+.project-img {
+  height: 300px;
+  width: 300px;
+}
+
+.project-container {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.technologies-container {
+  display: flex;
+  background: none;
+  justify-content: space-around;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px red, 0px 0px 30px rgb(56, 154, 247);
+}
+
+.technologies-container p {
+  color: white;
+  font-size: 14px;
+  text-shadow: .7px .7px red;
+  height: 30px;
+}
+
+.tech-div p:hover {
+  transform: scale(1.05);
+  text-shadow: 0px 0px 10px red, 0px 0px 30px rgb(56, 154, 247);
+  cursor: default;
+}
+
+.proj-btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+p {
+  text-shadow: .7px .7px white;
+}
+
+iframe {
+  border-radius: 10px;
+  /* border: 1px solid red; */
+}
+
+.audio-stats {
+  display: flex;
+  justify-content: space-around;
+  background: none;
+  width: 560px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.audio-card {
+  box-shadow: 0px 0px 20px red, 0px 0px 30px rgb(56, 154, 247);
+  justify-content: center;
+  margin: auto;
+  width: 560px;
+  border-radius: 10px;
+  border: 2px solid red;
+  margin-bottom: 50px;
+}
+
+.stats-header {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.stats-header h3 {
+  opacity: 0.7;
+  text-shadow: 0px 0px 10px red, 0px 0px 30px rgb(56, 154, 247);
+}
+
+.audio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
