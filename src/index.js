@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createStore, compose, applyMiddleware} from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { reducer } from './redux/reducer'
 
 const store = createStore(reducer, compose(
@@ -18,11 +18,11 @@ const store = createStore(reducer, compose(
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename='/'>
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
