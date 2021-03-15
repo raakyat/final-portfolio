@@ -186,6 +186,8 @@ nav img:hover {
 
 .technologies-container {
   display: flex;
+  flex-direction: row;
+  flex: 1;
   background: none;
   justify-content: space-around;
   margin-top: 30px;
@@ -194,10 +196,18 @@ nav img:hover {
 }
 
 .technologies-container p {
+  margin-top: 20px;
   color: white;
   font-size: 14px;
   text-shadow: .7px .7px red;
   height: 30px;
+}
+
+.stack-title {
+  display: block;
+  position: relative;
+  top: 26px;
+  opacity: 0.7;
 }
 
 .tech-div p:hover {
@@ -208,8 +218,9 @@ nav img:hover {
 
 .proj-btns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 p {
