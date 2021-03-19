@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 const Home = () => {
         return (
                 <>
-                    <img className="home-logo" src="https://i.ibb.co/HNTGzd1/DWLOGO.jpg" alt="Dylan Williamson" /><br/>
+                    <img className="home-logo" src="https://i.ibb.co/HNTGzd1/DWLOGO.jpg" alt="Dylan Williamson" />
                     <h2>I'm a Software Engineer based out of Upstate New York</h2>
-                    <h2>My background includes Audio Engineering & Music Production</h2><br/><br/><br/><br/>
-                    <div className="container">
-                        <div className="center">
+                    <h2 className="summary">My background includes Audio Engineering & Music Production</h2>
+                    <div className="nav-container">
+                        <div className="nav-top">
                             <Link to='/projects'>
                                 <button id="projects">
                                     Projects
@@ -27,14 +27,25 @@ const Home = () => {
                             <button id="resume" onClick={() => { window.open('https://drive.google.com/file/d/19laZUJRzKUEO74vyIJRFtyfgT88OLbeJ/view?usp=sharing', "_blank") }}>
                                 Resume
                             </button>
-                            <Link to='#'>
+                        </div>
+                        <div className="nav-bottom">
+                            {/* <Link to='#'>
                                 <img className="github" onClick={() => { window.open('https://github.com/Dylan-Williamson/', "_blank") }} src='https://i.ibb.co/zZY96TH/Git-Hub-Logo-White.png' alt="github"></img>
-                            </Link>
-                            <Link to='#'>
+                            </Link> */}
+                            {/* <Link to='#'>
                                 <img className="linkedin" onClick={() => { window.open('https://linkedin.com/in/dylwilliamson/', "_blank") }} src='https://i.ibb.co/hYh60gC/LI-Logo.png' alt="linkedIn"></img>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
+
+
+
+                    <Link to='#'>
+                        <img className="gh" onClick={() => { window.open('https://github.com/Dylan-Williamson/', "_blank") }} src='http://ghchart.rshah.org/dylan-williamson' alt="github"></img>
+                    </Link>
+
+
+
                 </>
         )
 }
